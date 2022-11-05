@@ -1,2 +1,2 @@
-/Lab/target/classes/*.class
+**/target
 pom.xml
