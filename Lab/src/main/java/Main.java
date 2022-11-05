@@ -1,4 +1,7 @@
 import com.human.Human;
+import  com.car.Ford;
+
+import java.util.Scanner;
 
 public class Main {
     /*  types
@@ -18,5 +21,14 @@ public class Main {
         System.out.println(human.getAge());
         human.birthday();
         System.out.println(human.getAge());
+
+        Ford ford = new Ford(2018, true);
+        System.out.println(ford.getYearOfIssue());
+        System.out.println(ford.getBustle());
+
+        int temporary = 0;
+        Scanner console = new Scanner(System.in);
+        temporary = console.nextInt();
+        System.out.printf("temporary = %d\n", temporary);
     }
 }
