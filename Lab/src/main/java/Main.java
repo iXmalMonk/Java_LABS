@@ -1,5 +1,6 @@
 import com.human.Human;
-import  com.car.Ford;
+import com.car.Car;
+import com.car.Ford;
 
 import java.util.Scanner;
 
@@ -14,21 +15,30 @@ public class Main {
     *   boolean bool = true; // 1 bit // bool
     *   char c = '9'; // 2 bytes // symbols
     */
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
 
-        Human human = new Human(18);
+    void printNOS(Car car) {
+        System.out.println(car.getNumberOfSeats());
+    }
+
+    public static void main(String[] args) {
+        //System.out.println("Hello World!");
+
+        /*Human human = new Human(18);
         System.out.println(human.getAge());
         human.birthday();
-        System.out.println(human.getAge());
+        System.out.println(human.getAge());*/
 
-        Ford ford = new Ford(2018, true);
+        /*Ford ford = new Ford(2018, true);
         System.out.println(ford.getYearOfIssue());
-        System.out.println(ford.getBustle());
+        System.out.println(ford.getBustle());*/
 
-        int temporary = 0;
+        /*int temporary = 0;
         Scanner console = new Scanner(System.in);
         temporary = console.nextInt();
-        System.out.printf("temporary = %d\n", temporary);
+        System.out.printf("temporary = %d\n", temporary);*/
+
+        Main main = new Main();
+        Car car = new Ford(2018, false);
+        main.printNOS(car);
     }
 }
