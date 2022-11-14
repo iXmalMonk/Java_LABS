@@ -16,29 +16,46 @@ public class Main {
     *   char c = '9'; // 2 bytes // symbols
     */
 
+    public void _1() {
+        System.out.println("Hello World!");
+    }
+
+    public void _2() {
+        Human human = new Human(18);
+        System.out.println(human.getAge());
+        human.birthday();
+        System.out.println(human.getAge());
+    }
+
+    public void _3() {
+        Ford ford = new Ford(2018, true);
+        System.out.println(ford.getYearOfIssue());
+        System.out.println(ford.getBustle());
+    }
+
+    public void _4() {
+        int temporary = 0;
+        Scanner console = new Scanner(System.in);
+        temporary = console.nextInt();
+        System.out.printf("temporary = %d\n", temporary);
+    }
+
     void printNOS(Car car) {
         System.out.println(car.getNumberOfSeats());
     }
 
-    public static void main(String[] args) {
-        //System.out.println("Hello World!");
-
-        /*Human human = new Human(18);
-        System.out.println(human.getAge());
-        human.birthday();
-        System.out.println(human.getAge());*/
-
-        /*Ford ford = new Ford(2018, true);
-        System.out.println(ford.getYearOfIssue());
-        System.out.println(ford.getBustle());*/
-
-        /*int temporary = 0;
-        Scanner console = new Scanner(System.in);
-        temporary = console.nextInt();
-        System.out.printf("temporary = %d\n", temporary);*/
-
-        Main main = new Main();
+    public void _5(Main main) {
         Car car = new Ford(2018, false);
         main.printNOS(car);
+    }
+
+    public static void main(String[] args) {
+        Main main = new Main();
+        /*main._1();
+        main._2();
+        main._3();
+        main._4();
+        main._5(main);*/
+
     }
 }
