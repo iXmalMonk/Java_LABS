@@ -9,7 +9,7 @@ package com.classes;
  */
 
 public class FirstClass {
-    void Method(){
+    public void Method(){
         SS temporary = new SS();
         temporary.Start();
         temporary.Stop();

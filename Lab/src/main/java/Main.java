@@ -1,6 +1,7 @@
 import com.human.Human;
 import com.car.Car;
 import com.car.Ford;
+import com.classes.FirstClass;
 
 import java.util.Scanner;
 
@@ -51,6 +52,8 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
+        FirstClass fc = new FirstClass();
+        fc.Method();
         /*main._1();
         main._2();
         main._3();
