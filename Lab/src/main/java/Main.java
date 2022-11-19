@@ -2,6 +2,7 @@ import com.human.Human;
 import com.car.Car;
 import com.car.Ford;
 import com.classes.FirstClass;
+import com.classes.SecondClass;
 
 import java.util.Scanner;
 
@@ -41,7 +42,7 @@ public class Main {
         System.out.printf("temporary = %d\n", temporary);
     }
 
-    void printNOS(Car car) {
+    public void printNOS(Car car) {
         System.out.println(car.getNumberOfSeats());
     }
 
@@ -50,15 +51,26 @@ public class Main {
         main.printNOS(car);
     }
 
-    public static void main(String[] args) {
-        Main main = new Main();
+    public void _6() {
         FirstClass fc = new FirstClass();
         fc.Method();
+    }
+
+    public static void main(String[] args) {
+        Main main = new Main();
+        SecondClass first_sc = new SecondClass(5);
+        SecondClass second_sc = new SecondClass(5);
+        System.out.println(first_sc.getVAR());
+        System.out.println(second_sc.getVAR());
+        first_sc.setVAR(2);
+        System.out.println(first_sc.getVAR());
+        System.out.println(second_sc.getVAR());
         /*main._1();
         main._2();
         main._3();
         main._4();
-        main._5(main);*/
+        main._5(main);
+        main._6()*/
 
     }
 }
