@@ -25,7 +25,7 @@ public class Main {
     }
 
     public void _2() {
-        Human human = new Human(18);
+        Human human = new Human(18, Human.Example.big);
         System.out.println(human.getAge());
         human.birthday();
         System.out.println(human.getAge());
@@ -73,10 +73,16 @@ public class Main {
         System.out.println(ThirdClass.n(3));
     }
 
-    public static void main(String[] args) {
-        Main main = new Main();
+    public void _9() {
         FourthClass fc = new FourthClass(3);
         fc.FourthClass(5);
+    }
+
+    public static void main(String[] args) {
+        Main main = new Main();
+        Human h = new Human(18, Human.Example.medium);
+        System.out.println(h.getExampleI());
+        System.out.println(h.getLetter());
         /*main._1();
         main._2();
         main._3();
@@ -84,7 +90,8 @@ public class Main {
         main._5(main);
         main._6();
         main._7();
-        main._8();*/
+        main._8();
+        main._9();*/
 
     }
 }
