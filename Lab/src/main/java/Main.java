@@ -3,6 +3,7 @@ import com.car.Car;
 import com.car.Ford;
 import com.classes.FirstClass;
 import com.classes.SecondClass;
+import com.classes.ThirdClass;
 
 import java.util.Scanner;
 
@@ -56,8 +57,7 @@ public class Main {
         fc.Method();
     }
 
-    public static void main(String[] args) {
-        Main main = new Main();
+    public void _7() {
         SecondClass first_sc = new SecondClass(5);
         SecondClass second_sc = new SecondClass(5);
         System.out.println(first_sc.getVAR());
@@ -65,12 +65,19 @@ public class Main {
         first_sc.setVAR(2);
         System.out.println(first_sc.getVAR());
         System.out.println(second_sc.getVAR());
+    }
+
+    public static void main(String[] args) {
+        Main main = new Main();
+        ThirdClass.m(3, 1, 2, 3); // because static
+        System.out.println(ThirdClass.n(3));
         /*main._1();
         main._2();
         main._3();
         main._4();
         main._5(main);
-        main._6()*/
+        main._6();
+        main._7();*/
 
     }
 }
