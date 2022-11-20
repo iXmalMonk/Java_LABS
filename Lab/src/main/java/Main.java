@@ -4,6 +4,7 @@ import com.car.Ford;
 import com.classes.FirstClass;
 import com.classes.SecondClass;
 import com.classes.ThirdClass;
+import com.classes.FourthClass;
 
 import java.util.Scanner;
 
@@ -67,17 +68,23 @@ public class Main {
         System.out.println(second_sc.getVAR());
     }
 
-    public static void main(String[] args) {
-        Main main = new Main();
+    public void _8() {
         ThirdClass.m(3, 1, 2, 3); // because static
         System.out.println(ThirdClass.n(3));
+    }
+
+    public static void main(String[] args) {
+        Main main = new Main();
+        FourthClass fc = new FourthClass(3);
+        fc.FourthClass(5);
         /*main._1();
         main._2();
         main._3();
         main._4();
         main._5(main);
         main._6();
-        main._7();*/
+        main._7();
+        main._8();*/
 
     }
 }
